@@ -14,4 +14,4 @@
 
 ## Usage
 
-[LINK](https://miroslavmashivskyi.github.io/my-money/)
+Just click on the [LINK](https://miroslavmashivskyi.github.io/my-money/)
