@@ -1,0 +1,10 @@
+@font-face {
+  font-family: Grenze_Gotish;
+  src: url("./styles/fonts/Grenze_Gotisch/static/GrenzeGotisch-Medium.ttf");
+  font-style: normal;
+}
+
+@import './styles/header';
+@import './styles/add';
+@import './styles/button';
+@import './styles/form';

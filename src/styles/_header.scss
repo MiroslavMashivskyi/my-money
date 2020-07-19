@@ -1,0 +1,11 @@
+.header {
+  color: red;
+  background-color: grey;
+
+  & > h1 {
+    display: block;
+    text-align: center;
+    font-family: Grenze_Gotish;
+    font-size: 60px;
+  }
+}
