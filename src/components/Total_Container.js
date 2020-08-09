@@ -9,7 +9,6 @@ const mapStateToProps = (state) => {
   }
 }
 
-
 const Total_Container = connect(mapStateToProps, {converter, reset})(Total);
 
 export default Total_Container;

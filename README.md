@@ -14,4 +14,4 @@
 
 ## Usage
 
-Just click on the [LINK](https://miroslavmashivskyi.github.io/my-money/)
+[LINK](https://miroslavmashivskyi.github.io/my-money/)

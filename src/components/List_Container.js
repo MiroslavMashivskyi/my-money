@@ -7,8 +7,6 @@ const mapStateToProps = () => {
   return {}
 }
 
-
-
 const List_Container = connect(mapStateToProps, {list, clear})(List);
 
 export default List_Container;

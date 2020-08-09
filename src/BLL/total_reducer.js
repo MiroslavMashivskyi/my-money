@@ -1,4 +1,4 @@
-import { getRates } from '../API/currencies';
+import { getCarrencies } from '../API/API';
 
 const initialState = {
   collection: [],
@@ -43,7 +43,7 @@ export default total_reducer;
 
 export const converter= (collection, currency) => {
   return (dispatch) => {
-    getRates().then(data => {
+    getCarrencies().then(data => {
       collection.forEach((item, i) => {
         dispatch(total(data.rates[item[1]], item[0], currency, i));
       });

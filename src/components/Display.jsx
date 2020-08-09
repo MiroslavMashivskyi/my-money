@@ -1,8 +1,6 @@
 import React from 'react';
 
 const Display = ({ history, total }) => {
-  // console.log(total.total.amount);
-  // console.log(total.total.currency);
   let arr = Object.entries(history);
     return  (
       <section>
@@ -21,10 +19,10 @@ const Display = ({ history, total }) => {
           )
         })}
         <br />
-      <div>
-        {total.total.amount}&nbsp;
-        {total.total.currency}
-      </div>
+        <div>
+          {total.total.amount}&nbsp;
+          {total.total.currency}
+        </div>
       </section>
     )
 }

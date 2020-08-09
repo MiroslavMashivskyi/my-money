@@ -1,11 +1,13 @@
-import React from 'react';
 import Currency from './Currency';
-import {currencies} from '../API/currencies';
+import { connect } from 'react-redux';
+import { setCurrencies } from '../BLL/currency_reducer';
 
-const Currency_Container = () => {
-    return (
-        <Currency currenciesList={currencies} />
-    )
+const mapStateToProps = (state) => {
+  return {
+    currenciesList: state.currencies.currencies
+  }
 }
+
+const Currency_Container = connect(mapStateToProps, {setCurrencies})(Currency);
 
 export default Currency_Container;

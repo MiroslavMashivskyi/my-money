@@ -7,7 +7,7 @@ const List = (props) => {
   }
   
   return (
-    <div>
+    <div className="list">
       <button className = "button" onClick = {onSubmit}>List</button>
     </div>
   )
