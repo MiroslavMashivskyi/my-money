@@ -20,8 +20,8 @@ const currency_reducer = (state = initilstate, action) => {
 export const currencies = (currencies) => ({type:CURRENCIES, currencies});
 
 export const setCurrencies = () => {
-  return (dispatch) => {
-    getCarrencies().then(data => dispatch(currencies(Object.keys(data.rates))));
+  return async (dispatch) => {
+    await getCarrencies().then(data => dispatch(currencies(Object.keys(data.rates))));
   }
 }
 
