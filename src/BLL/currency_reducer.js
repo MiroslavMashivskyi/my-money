@@ -1,7 +1,7 @@
-import { getCarrencies } from "../API/API";
+import { currenciesNames } from "../API/currencies";
 
 const initilstate = {
-  currencies: []
+  currencies: currenciesNames,
 }
 
 const CURRENCIES = "currency_reducer/CURRENCIES";
@@ -19,10 +19,9 @@ const currency_reducer = (state = initilstate, action) => {
 
 export const currencies = (currencies) => ({type:CURRENCIES, currencies});
 
-export const setCurrencies = () => {
-  return async (dispatch) => {
-    await getCarrencies().then(data => dispatch(currencies(Object.keys(data.rates))));
-  }
-}
+// export const setCurrencies = () => async (dispatch) => {
+//   const responce = await getCarrencies();
+//   responce.then(data => dispatch(currencies(Object.keys(data.rates))));
+// }
 
 export default currency_reducer;
