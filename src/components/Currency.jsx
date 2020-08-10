@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 class Currency extends Component {
-  componentDidMount() {
+  componentWillMount() {
     this.props.setCurrencies();
   }
 
