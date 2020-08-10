@@ -36,7 +36,7 @@ const AddForm = (props) => {
 const AddReduxForm = reduxForm({form: "add", validate})(AddForm);
 
 const Add = (props) => {
-  const onSubmit = ({ date, amount, currency, goodsName, reset }) => {
+  const onSubmit = ({ date, amount, currency, goodsName }) => {
     props.addNote(date, amount, currency, goodsName);
     props.add(amount, currency);
     props.reset('add');
